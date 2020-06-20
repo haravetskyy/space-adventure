@@ -12,8 +12,9 @@ body {
 }
 
 .hero {
+  position: relative;
   .bg-video {
-    position: fixed;
+    position: relative;
     right: 0;
     bottom: 0;
     min-width: 100%;
@@ -23,7 +24,8 @@ body {
   }
 
   .content {
-    position: fixed;
+    position: absolute;
+    top: 0px;
     z-index: 20%;
     display: flex;
     justify-content: center;
