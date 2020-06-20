@@ -22,7 +22,7 @@ body {
 }
 
 .hero .content {
-  position: fixed;
+  position: absolute;
   z-index: 20%;
   display: -webkit-box;
   display: -ms-flexbox;
