@@ -44,3 +44,19 @@ body {
     }
   }
 }
+
+// News block
+.news {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  &__img,
+  &__source {
+    object-fit: cover;
+    width: 100%;
+    height: 220px;
+  }
+
+  &__img {
+  }
+}
