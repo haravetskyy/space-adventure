@@ -3,8 +3,18 @@
 
 * {
   box-sizing: border-box;
-  margin: 0;
+}
+
+html,
+body {
   padding: 0;
+  margin: 0;
+}
+
+html {
+  font-family: "Roboto Slab", serif;
+  padding: 0;
+  margin: 0;
 }
 
 body {
@@ -37,7 +47,6 @@ body {
     text-align: center;
     padding: 0px 100px 0px 100px;
 
-    font-family: "Roboto Slab", serif;
     color: #fff;
 
     h1 {
