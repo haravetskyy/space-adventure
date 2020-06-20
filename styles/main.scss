@@ -1,6 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
 
+$laptop: 1024px;
+$tablet: 768px;
+$mobile_l: 425px;
+$mobile_m: 375px;
+$mobile_s: 320px;
+
 * {
   box-sizing: border-box;
   margin: 0;
