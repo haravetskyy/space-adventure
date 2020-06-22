@@ -194,6 +194,7 @@ p {
     width: 70%;
   }
   .news__article {
+    opacity: 1;
     padding: 15px;
   }
   .news__article-header {

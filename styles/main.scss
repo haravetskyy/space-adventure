@@ -152,6 +152,7 @@ p {
   .news {
     &__article {
       padding: 15px;
+
       &-header {
         font-size: 1.8rem;
       }
@@ -183,6 +184,7 @@ p {
     }
 
     &__article {
+      opacity: 1;
       padding: 15px;
       &-header {
         font-size: 1.8rem;
