@@ -47,7 +47,7 @@ p {
     position: relative;
     right: 0;
     bottom: 0;
-    min-width: 100%;
+    width: 100%;
     min-height: 100%;
   }
 
@@ -90,6 +90,13 @@ p {
 
   &__elem {
     position: relative;
+    z-index: 2;
+
+    &:hover {
+      .news__article {
+        opacity: 1;
+      }
+    }
   }
 
   &__img,
@@ -97,10 +104,11 @@ p {
     border-radius: 16px;
     object-fit: cover;
     width: 100%;
-    // height: 400px;
   }
 
   &__article {
+    transition: all 0.4s;
+    opacity: 0;
     border-radius: 16px;
     position: absolute;
     top: 0;
@@ -144,6 +152,7 @@ p {
   .news {
     &__article {
       padding: 15px;
+
       &-header {
         font-size: 1.8rem;
       }
@@ -151,7 +160,6 @@ p {
       &-txt {
         font-size: 1rem;
         overflow-y: scroll;
-        height: 60%;
       }
     }
   }
@@ -176,6 +184,7 @@ p {
     }
 
     &__article {
+      opacity: 1;
       padding: 15px;
       &-header {
         font-size: 1.8rem;
@@ -184,7 +193,6 @@ p {
       &-txt {
         font-size: 1rem;
         overflow-y: scroll;
-        height: 60%;
       }
     }
   }
