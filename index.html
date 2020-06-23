@@ -14,13 +14,13 @@
     <div class="wrapper">
       <div class="hero">
         <video
-          class="bg-video"
+          class="hero__video"
           autoplay
           loop
           muted
           src="./files/video/stars.mp4"
         ></video>
-        <div class="content">
+        <div class="hero__content">
           <h1>Space Adventure</h1>
           <h2>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
@@ -29,9 +29,95 @@
           </h2>
         </div>
       </div>
-      <div class="news"></div>
-      <div class="video"></div>
-      <footer></footer>
+      <section class="news">
+        <div class="news__elem">
+          <picture class="news__picture">
+            <source media="(max-width: 500px)" srcset="" class="news__source" />
+            <source
+              media="(max-width: 1024px)"
+              srcset=""
+              class="news__source"
+            />
+            <img
+              src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/andromeda-galaxy-royalty-free-image-1585682435.jpg"
+              alt="Galaxy"
+              class="news__img"
+            />
+          </picture>
+
+          <article class="news__article">
+            <h2 class="news__article-header">Galaxy</h2>
+            <p class="news__article-txt">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
+              earum voluptatem, itaque sunt nesciunt aperiam consequuntur autem
+              quis enim eos iure quasi dignissimos, hic qui adipisci.
+              Perferendis saepe at dignissimos.
+            </p>
+          </article>
+        </div>
+        <div class="news__elem">
+          <picture class="news__picture">
+            <source media="(max-width: 500px)" srcset="" class="news__source" />
+            <source
+              media="(max-width: 1024px)"
+              srcset=""
+              class="news__source"
+            />
+            <img
+              src="https://www.nasa.gov/sites/default/files/thumbnails/image/stsci-h-p2016a-m-2000x1374.png"
+              alt="Hubble Marks"
+              class="news__img"
+            />
+          </picture>
+
+          <article class="news__article">
+            <h2 class="news__article-header">Hubble Marks</h2>
+            <p class="news__article-txt">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
+              earum voluptatem, itaque sunt nesciunt aperiam consequuntur autem
+              quis enim eos iure quasi dignissimos, hic qui adipisci.
+              Perferendis saepe at dignissimos.
+            </p>
+          </article>
+        </div>
+        <div class="news__elem">
+          <picture class="news__picture">
+            <source media="(max-width: 500px)" srcset="" class="news__source" />
+            <source
+              media="(max-width: 1024px)"
+              srcset=""
+              class="news__source"
+            />
+            <img
+              src="https://www.sciencemag.org/sites/default/files/styles/article_main_large/public/planet_1280p.jpg?itok=07tueTM9"
+              alt="Planet"
+              class="news__img"
+            />
+          </picture>
+
+          <article class="news__article">
+            <h2 class="news__article-header">Planet</h2>
+            <p class="news__article-txt">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
+              earum voluptatem, itaque sunt nesciunt aperiam consequuntur autem
+              quis enim eos iure quasi dignissimos, hic qui adipisci.
+              Perferendis saepe at dignissimos.
+            </p>
+          </article>
+        </div>
+      </section>
+      <section class="video">
+        <iframe
+          class="video__iframe"
+          src="https://www.youtube.com/embed/wEsGKZ0EZwI"
+          frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </section>
+      <footer>
+        <p>© Taras Kostiv and Yura Haravetskyy 2020</p>
+      </footer>
     </div>
   </body>
 </html>
