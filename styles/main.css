@@ -23,17 +23,15 @@ ul {
   position: relative;
 }
 
-.hero .bg-video {
+.hero__video {
   position: relative;
   right: 0;
   bottom: 0;
   min-width: 100%;
   min-height: 100%;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7)));
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
 }
 
-.hero .content {
+.hero__content {
   position: absolute;
   top: 0;
   z-index: 20%;
@@ -55,9 +53,11 @@ ul {
   padding: 0px 100px 0px 100px;
   font-family: "Roboto Slab", serif;
   color: #fff;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(25%, rgba(0, 0, 0, 0.143295)), color-stop(90%, black));
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.143295) 25%, black 90%);
 }
 
-.hero .content h1 {
+.hero__content h1 {
   margin-bottom: 40px;
   font-size: 3.5rem;
 }
