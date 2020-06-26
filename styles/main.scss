@@ -220,11 +220,6 @@ p {
       }
     }
   }
-
-  .video {
-    &__iframe {
-    }
-  }
 }
 
 @media screen and (max-width: $tablet) {
@@ -251,19 +246,10 @@ p {
       }
     }
   }
-
-  .video {
-    &__iframe {
-    }
-  }
 }
 
 footer {
-  background: linear-gradient(
-      0deg,
-      rgba(0, 0, 0, 0.14329481792717091) 25%,
-      rgba(0, 0, 0, 1) 90%
-    ),
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.14329481792717091) 25%, rgba(0, 0, 0, 1) 90%),
     url(https://walldeco.ua/img/gallery/63/thumbs/thumb_l_10093.jpg);
 
   background-size: cover;
