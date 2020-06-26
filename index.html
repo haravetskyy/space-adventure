@@ -9,10 +9,15 @@
       rel="shortcut icon"
       href="https://images.vexels.com/media/users/3/157970/isolated/preview/c156b4270aea292b9b335dd463ea17eb-earth-planet-icon-earth-icon-by-vexels.png"
     />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+    />
   </head>
   <body>
     <div class="wrapper">
-      <div class="hero">
+      <div class="hero" id="hero">
         <video
           class="bg-video"
           autoplay
@@ -29,9 +34,138 @@
           </h2>
         </div>
       </div>
-      <div class="news"></div>
-      <div class="video"></div>
-      <footer></footer>
+      <section class="news" id="news">
+        <div class="news__elem">
+          <picture class="news__picture">
+            <source media="(max-width: 500px)" srcset="" class="news__source" />
+            <source
+              media="(max-width: 1024px)"
+              srcset=""
+              class="news__source"
+            />
+            <img
+              src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/andromeda-galaxy-royalty-free-image-1585682435.jpg"
+              alt="Galaxy"
+              class="news__img"
+            />
+          </picture>
+
+          <article class="news__article">
+            <h2 class="news__article-header">Galaxy</h2>
+            <p class="news__article-txt">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
+              earum voluptatem, itaque sunt nesciunt aperiam consequuntur autem
+              quis enim eos iure quasi dignissimos, hic qui adipisci.
+              Perferendis saepe at dignissimos.
+            </p>
+          </article>
+        </div>
+        <div class="news__elem">
+          <picture class="news__picture">
+            <source media="(max-width: 500px)" srcset="" class="news__source" />
+            <source
+              media="(max-width: 1024px)"
+              srcset=""
+              class="news__source"
+            />
+            <img
+              src="https://www.nasa.gov/sites/default/files/thumbnails/image/stsci-h-p2016a-m-2000x1374.png"
+              alt="Hubble Marks"
+              class="news__img"
+            />
+          </picture>
+
+          <article class="news__article">
+            <h2 class="news__article-header">Hubble Marks</h2>
+            <p class="news__article-txt">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
+              earum voluptatem, itaque sunt nesciunt aperiam consequuntur autem
+              quis enim eos iure quasi dignissimos, hic qui adipisci.
+              Perferendis saepe at dignissimos.
+            </p>
+          </article>
+        </div>
+        <div class="news__elem">
+          <picture class="news__picture">
+            <source media="(max-width: 500px)" srcset="" class="news__source" />
+            <source
+              media="(max-width: 1024px)"
+              srcset=""
+              class="news__source"
+            />
+            <img
+              src="https://www.sciencemag.org/sites/default/files/styles/article_main_large/public/planet_1280p.jpg?itok=07tueTM9"
+              alt="Planet"
+              class="news__img"
+            />
+          </picture>
+
+          <article class="news__article">
+            <h2 class="news__article-header">Planet</h2>
+            <p class="news__article-txt">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
+              earum voluptatem, itaque sunt nesciunt aperiam consequuntur autem
+              quis enim eos iure quasi dignissimos, hic qui adipisci.
+              Perferendis saepe at dignissimos.
+            </p>
+          </article>
+        </div>
+      </section>
+      <section class="video" id="video">
+        <iframe
+          width="900"
+          height="615"
+          class="video__iframe"
+          src="https://www.youtube.com/embed/wEsGKZ0EZwI"
+          frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </section>
+      <footer>
+        <nav class="footer__nav">
+          <h3 class="footer__nav__heading">Navigation</h3>
+
+          <a class="footer__nav__link" href="#hero">Hero</a>
+          <a class="footer__nav__link" href="#news">News</a>
+          <a class="footer__nav__link" href="#video">Film</a>
+        </nav>
+
+        <div class="about_us">
+          <article class="about_us__divider">
+            <h4 class="about_us__divider__heading">Yura Haravetskyy</h4>
+            <a
+              href="https://github.com/yngharavetskyy/"
+              class="about_us__divider__link"
+              >GitHub (yngharavetskyy)</a
+            >
+            <a href="t.me/haravetskyy300" class="about_us__divider__link"
+              >Telegram (haravetskyy300)</a
+            >
+            <a href="instagram.com/haravetsky_y" class="about_us__divider__link"
+              >Instagram (haravetsky.y)</a
+            >
+          </article>
+          <article class="about_us__divider">
+            <h4 class="about_us__divider__heading">Taras Kostiv</h4>
+            <a
+              href="https://github.com/TarasKostiv"
+              class="about_us__divider__link"
+              >Github (TarasKostiv)</a
+            >
+            <a
+              href="https://www.instagram.com/y_kropik/"
+              class="about_us__divider__link"
+              >Instagram (y_kropik)</a
+            >
+            <a
+              href="https://steamcommunity.com/profiles/76561198257777900/"
+              class="about_us__divider__link"
+              >Steam Community (HappyKiller)</a
+            >
+          </article>
+        </div>
+      </footer>
     </div>
   </body>
 </html>

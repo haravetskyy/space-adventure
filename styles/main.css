@@ -11,6 +11,14 @@ body {
   font-size: 16px;
 }
 
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
 .hero {
   position: relative;
 }
@@ -35,6 +43,76 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 0px 100px 0px 100px;
+  font-family: "Roboto Slab", serif;
+  color: #fff;
+}
+
+.hero .content h1 {
+  margin-bottom: 40px;
+  font-size: 3.5rem;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-size: 16px;
+}
+
+h1,
+h2 {
+  font-family: "Roboto Slab", serif;
+}
+
+p {
+  font-family: "Roboto", serif;
+}
+
+.wrapper {
+  background: black;
+}
+
+.hero {
+  position: relative;
+  margin-bottom: -4px;
+}
+
+.hero .bg-video {
+  position: relative;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  min-height: 100%;
+}
+
+.hero .content {
+  position: absolute;
+  top: 0px;
+  z-index: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -46,11 +124,210 @@ body {
           flex-direction: column;
   text-align: center;
   padding: 0px 100px 0px 100px;
-  font-family: "Roboto Slab", serif;
   color: #fff;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(25%, rgba(0, 0, 0, 0.143295)), color-stop(90%, black));
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.143295) 25%, black 90%);
 }
 
 .hero .content h1 {
   margin-bottom: 40px;
-  font-size: 3.5rem;
+  font-size: 3rem;
+}
+
+.news {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  padding: 20px;
+  grid-column-gap: 20px;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+}
+
+.news__elem {
+  position: relative;
+  z-index: 2;
+}
+
+.news__elem:hover .news__article {
+  opacity: 1;
+}
+
+.news__img, .news__source {
+  border-radius: 16px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+
+.news__article {
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  opacity: 0;
+  border-radius: 16px;
+  position: absolute;
+  top: 0;
+  padding: 25px;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.143295)), to(black));
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.143295) 0%, black 100%);
+}
+
+.news__article-header {
+  font-size: 2rem;
+}
+
+.news__article-txt {
+  margin-top: 0;
+  font-size: 1.2rem;
+}
+
+.video {
+  width: 100%;
+  height: 800px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.video__iframe {
+  border: 4px solid #000;
+  border-radius: 20px;
+}
+
+@media screen and (max-width: 1024px) {
+  .news__article {
+    padding: 15px;
+  }
+  .news__article-header {
+    font-size: 1.8rem;
+  }
+  .news__article-txt {
+    font-size: 1rem;
+    overflow-y: scroll;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .news {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .news__elem {
+    width: 70%;
+  }
+  .news__article {
+    opacity: 1;
+    padding: 15px;
+  }
+  .news__article-header {
+    font-size: 1.8rem;
+  }
+  .news__article-txt {
+    font-size: 1rem;
+    overflow-y: scroll;
+  }
+}
+
+footer {
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(25%, rgba(0, 0, 0, 0.143295)), color-stop(90%, black)), url(https://walldeco.ua/img/gallery/63/thumbs/thumb_l_10093.jpg);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.143295) 25%, black 90%), url(https://walldeco.ua/img/gallery/63/thumbs/thumb_l_10093.jpg);
+  background-size: cover;
+  height: 420px;
+  padding: 0px 100px 0px 100px;
+  font-family: "Roboto", serif;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.footer__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer__nav__heading {
+  font-family: "Roboto Slab", sans-serif;
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.footer__nav__link {
+  color: #fff;
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+  margin-left: 10px;
+}
+
+.footer__nav__link:hover {
+  text-decoration: underline;
+}
+
+.about_us__divider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.about_us__divider__heading {
+  font-size: 1.7rem;
+  font-family: "Roboto Slab", sans-serif;
+  margin-bottom: 15px;
+}
+
+.about_us__divider__link {
+  color: #fff;
+  font-size: 1rem;
+  margin-bottom: 30px;
+  margin-left: 10px;
+}
+
+.about_us__divider__link:hover {
+  text-decoration: underline;
 }
