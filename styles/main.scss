@@ -9,6 +9,49 @@ $mobileM: 320px;
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 16px;
+}
+
+.hero {
+  position: relative;
+
+  &__video {
+    position: relative;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+  }
+
+  &__content {
+    position: absolute;
+    top: 0;
+    z-index: 20%;
+    display: flex;
+    justify-content: center;
+
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    text-align: center;
+    padding: 0px 100px 0px 100px;
+
+    font-family: "Roboto Slab", serif;
+    color: #fff;
+
+    h1 {
+      margin-bottom: 40px;
+      font-size: 3.5rem;
+    }
+  }
 }
 
 html,
