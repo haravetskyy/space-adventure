@@ -13,7 +13,7 @@ $mobileM: 320px;
   padding: 0;
 }
 
-body {
+html {
   font-size: 16px;
 }
 
@@ -34,8 +34,6 @@ ul {
     bottom: 0;
     min-width: 100%;
     min-height: 100%;
-
-    // background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
   }
 
   &__content {
@@ -57,6 +55,7 @@ ul {
     h1 {
       margin-bottom: 40px;
       font-size: 3.5rem;
+      text-align: center;
     }
 
     background: linear-gradient(
@@ -202,6 +201,8 @@ p {
     border: 4px solid #000;
     -moz-border-radius: 15px;
     border-radius: 20px;
+    height: 615px;
+    width: 80%;
   }
 }
 
@@ -248,8 +249,44 @@ p {
   }
 }
 
+@media screen and (max-width: $mobileL) {
+  html {
+    font-size: 14px;
+  }
+
+  .hero {
+    &__content {
+      padding: 0px 50px 0px 50px;
+    }
+  }
+
+  .footer {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .video {
+    height: 400px;
+
+    &__iframe {
+      height: 200px;
+      width: 80%;
+    }
+  }
+
+  .news {
+    &__elem {
+      width: auto;
+    }
+  }
+}
+
 footer {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.14329481792717091) 25%, rgba(0, 0, 0, 1) 90%),
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.14329481792717091) 25%,
+      rgba(0, 0, 0, 1) 90%
+    ),
     url(https://walldeco.ua/img/gallery/63/thumbs/thumb_l_10093.jpg);
 
   background-size: cover;
