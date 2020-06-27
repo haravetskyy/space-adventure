@@ -11,6 +11,21 @@ html {
   font-size: 16px;
 }
 
+h1,
+h2 {
+  font-family: "Roboto Slab", serif;
+}
+
+p {
+  font-family: "Roboto", serif;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
 a {
   text-decoration: none;
 }
@@ -62,30 +77,6 @@ ul {
   font-size: 3.5rem;
   text-align: center;
   margin-top: 30px;
-}
-
-html,
-body {
-  padding: 0;
-  margin: 0;
-}
-
-html {
-  padding: 0;
-  margin: 0;
-}
-
-body {
-  font-size: 16px;
-}
-
-h1,
-h2 {
-  font-family: "Roboto Slab", serif;
-}
-
-p {
-  font-family: "Roboto", serif;
 }
 
 .wrapper {
@@ -197,6 +188,79 @@ p {
   font-size: 1.2rem;
 }
 
+footer {
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(25%, rgba(0, 0, 0, 0.143295)), color-stop(90%, black)), url(https://walldeco.ua/img/gallery/63/thumbs/thumb_l_10093.jpg);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.143295) 25%, black 90%), url(https://walldeco.ua/img/gallery/63/thumbs/thumb_l_10093.jpg);
+  background-size: cover;
+  height: 420px;
+  padding: 0px 100px 0px 100px;
+  font-family: "Roboto", serif;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.footer__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer__nav__heading {
+  font-family: "Roboto Slab", sans-serif;
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.footer__nav__link {
+  color: #fff;
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+  margin-left: 10px;
+}
+
+.footer__nav__link:hover {
+  text-decoration: underline;
+}
+
+.about_us__divider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.about_us__divider__heading {
+  font-size: 1.7rem;
+  font-family: "Roboto Slab", sans-serif;
+  margin-bottom: 15px;
+}
+
+.about_us__divider__link {
+  color: #fff;
+  font-size: 1rem;
+  margin-bottom: 30px;
+  margin-left: 10px;
+}
+
+.about_us__divider__link:hover {
+  text-decoration: underline;
+}
+
 .video {
   width: 100%;
   height: 800px;
@@ -276,6 +340,7 @@ p {
         -ms-flex-direction: column;
             flex-direction: column;
     height: auto;
+    padding: 0 60px 0 60px;
   }
   .video {
     height: 400px;
@@ -292,77 +357,4 @@ p {
   h2 {
     font-size: 1rem;
   }
-}
-
-footer {
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(25%, rgba(0, 0, 0, 0.143295)), color-stop(90%, black)), url(https://walldeco.ua/img/gallery/63/thumbs/thumb_l_10093.jpg);
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.143295) 25%, black 90%), url(https://walldeco.ua/img/gallery/63/thumbs/thumb_l_10093.jpg);
-  background-size: cover;
-  height: 420px;
-  padding: 0px 100px 0px 100px;
-  font-family: "Roboto", serif;
-  color: #fff;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
-.footer__nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.footer__nav__heading {
-  font-family: "Roboto Slab", sans-serif;
-  font-size: 2rem;
-  margin-bottom: 15px;
-}
-
-.footer__nav__link {
-  color: #fff;
-  font-size: 1.5rem;
-  margin-bottom: 30px;
-  margin-left: 10px;
-}
-
-.footer__nav__link:hover {
-  text-decoration: underline;
-}
-
-.about_us__divider {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.about_us__divider__heading {
-  font-size: 1.7rem;
-  font-family: "Roboto Slab", sans-serif;
-  margin-bottom: 15px;
-}
-
-.about_us__divider__link {
-  color: #fff;
-  font-size: 1rem;
-  margin-bottom: 30px;
-  margin-left: 10px;
-}
-
-.about_us__divider__link:hover {
-  text-decoration: underline;
 }
