@@ -27,8 +27,8 @@ ul {
   position: relative;
   right: 0;
   bottom: 0;
-  min-width: 100%;
   min-height: 100%;
+  width: 100%;
 }
 
 .hero__content {
@@ -58,9 +58,10 @@ ul {
 }
 
 .hero__content h1 {
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   font-size: 3.5rem;
   text-align: center;
+  margin-top: 30px;
 }
 
 html,
@@ -136,7 +137,7 @@ p {
 }
 
 .news {
-  margin-top: 20px;
+  margin-top: 30px;
   margin-bottom: 20px;
   position: relative;
   display: -ms-grid;
@@ -285,6 +286,11 @@ p {
   }
   .news__elem {
     width: auto;
+    margin-bottom: 5px;
+    margin-top: 5px;
+  }
+  h2 {
+    font-size: 1rem;
   }
 }
 
