@@ -1,5 +1,7 @@
-# ampli-adv-fe-09-video
+# Space Adventure
 
-Link to site : https://yngharavetskyy.github.io/ampli-adv-fe-09-video/index.html (_master branch_)
+Training project aimed at using <video> HTML tag gradient effect and in team using git
 
-**Produced by Taras Kostiv and Yura Haravetskyy**
+#
+
+**Made by Taras Kostiv and Yura Haravetskyy**
