@@ -1,7 +1,6 @@
 # Space Adventure
 
-Training project aimed at using <video> HTML tag gradient effect and in team using git
+Training project aimed at using <video> HTML tag, CSS gradient effect and in using git in team
 
 #
-
-**Made by Taras Kostiv and Yura Haravetskyy**
+**Made by Taras Kostiv and Yuriy Haravetskyy**
